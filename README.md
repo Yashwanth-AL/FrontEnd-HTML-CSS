@@ -1,2 +1,2 @@
 # HTML
-basics of html
+THis repository contains some basics of html.
