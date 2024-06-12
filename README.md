@@ -1,2 +1,2 @@
 # HTML
-THis repository contains some basics of html.
+This repository contains some basics of html.
