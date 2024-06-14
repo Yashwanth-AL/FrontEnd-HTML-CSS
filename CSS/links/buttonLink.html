@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Link</title>
+        <style>
+            a:link, a:visited{
+                background-color: brown;
+                color:white;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Absolute URL</h1>
+        <a href="https://www.google.com" target="_blank">Google.com</a>
+        <br>
+        <h1>Relative URL</h1>
+        <a href="../me.jpg" target="_blank">Link to image <br></a>
+        <h1>Image as link</h1>
+        <h5>Click on this image to open google.com</h5>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvUJd_NWk49yulw7VfQr3Z7Y8y9BUqRgesaA&s" alt="my photo" 
+            style="width: 50px; height: 30px;">
+        </a>
+        <h1>link to an email address</h1>
+        <a href="mailto:yashwanthal2004@gmail.com">send mail</a>
+        <br>
+
+        <h1>Button as a link</h1>
+        <button onclick="document.location='https://www.google.com'">GOOGLE</button>
+
+        <h1>providing title for a link</h1>
+        <a href="https://www.google.com" title="click on the link to visit google.com" target="_blank">google.com</a>
+        <br>
+        <br>
+    </body>
+</html>
