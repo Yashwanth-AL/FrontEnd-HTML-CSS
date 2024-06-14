@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Links</title>
+        <!--
+            The target attribute specifies where to open the linked document.
+            _self - Default. Opens the document in the same window/tab as it was clicked.
+            _blank - Opens the document in a new window or tab.
+            _parent - Opens the document in the parent frame.
+            _top - Opens the document in the full body of the window.
+        -->
+        <!--
+            Use the <a> element to define a link
+            Use the href attribute to define the link address
+            Use the target attribute to define where to open the linked document
+            Use the <img> element (inside <a>) to use an image as a link
+            Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+        -->
+        <style>
+            body {background-color: rgb(186, 241, 241);}
+            h1 {color:black;}
+            p {color:red;}
+        </style>
+    </head>
+    <body>
+        <h1>Absolute URL</h1>
+        <a href="https://www.google.com" target="_blank">Google.com</a>
+        <br>
+        <h1>Relative URL</h1>
+        <a href="../me.jpg" target="_blank">Link to image <br></a>
+        <h1>Image as link</h1>
+        <h5>Click on this image to open google.com</h5>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvUJd_NWk49yulw7VfQr3Z7Y8y9BUqRgesaA&s" alt="my photo" 
+            style="width: 50px; height: 30px;">
+        </a>
+        <h1>link to an email address</h1>
+        <a href="mailto:yashwanthal2004@gmail.com">send mail</a>
+        <br>
+
+        <h1>Button as a link</h1>
+        <button onclick="document.location='https://www.google.com'">GOOGLE</button>
+
+        <h1>providing title for a link</h1>
+        <a href="https://www.google.com" title="click on the link to visit google.com" target="_blank">google.com</a>
+        <br>
+        <br>
+
+    </body>
+</html>
