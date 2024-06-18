@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+    <!--
+    Use the HTML <map> element to define an image map
+    Use the HTML <area> element to define the clickable areas in the image map
+    Use the HTML usemap attribute of the <img> element to point to an image map
+    The following shapes can be used : 
+    rect - defines a rectangular region
+    circle - defines a circular region
+    poly - defines a polygonal region
+    default - defines the entire region
+-->
+</head>
+<body>
+    <h1>Geometric Shapes Image Map Example</h1>
+    <p style="background-image: url(../../me.jpg);">added background image</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Shape_Area.svg/600px-Shape_Area.svg.png?20201013125443" usemap="#shapemap" alt="Geometric Shapes" style="width: 200px; height: 200px;">
+    <map name="shapemap">
+        <area shape="rect" coords="40,32,70,70" href="https://en.wikipedia.org/wiki/Rectangle" alt="Rectangle" onclick="myFunction()" target="_blank">
+        <area shape="circle" coords="130,120,40" href="https://en.wikipedia.org/wiki/Circle" alt="Circle" onclick="myFunction()" target="_blank">
+        <area shape="poly" coords="17,90,17,180,100,180" href="https://en.wikipedia.org/wiki/Polygon" alt="Triangle" onclick="myFunction()" target="_blank">
+    </map>
+    <script>
+        function myFunction(){
+            alert("You are openeing Wikipedia!!!!");
+        }
+    </script>
+</body>
+</html>
