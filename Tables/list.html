@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>List in html</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../Photos/favicon.jpg">
+        <!--
+            <ul>	Defines an unordered list
+            <ol>	Defines an ordered list
+            <li>	Defines a list item
+            <dl>	Defines a description list
+            <dt>	Defines a term in a description list
+            <dd>	Describes the term in a description list
+        -->
+
+        <!--
+            The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+            Value	Description
+            disc	Sets the list item marker to a bullet (default)
+            circle	Sets the list item marker to a circle
+            square	Sets the list item marker to a square
+            none	The list items will not be marked
+        -->
+    </head>    
+    <body>
+        <h1>Unordered List</h1>
+        <ul style="list-style-type: disc;">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>biscuit</li>
+        </ul>
+        <h1>Ordered List</h1>
+        <ol>
+            <li>car</li>
+            <li>bike</li>
+            <li>bus</li>
+        </ol>
+        <h1>List with Description</h1>
+        <dl>
+            <dt>Car</dt>
+            <dd>Here is some description related to car. My favaourite car is ferrarri.... </dd>
+            <dt>Bike</dt>
+            <dd>Here is some description related to car. My favourite bike is kawasaki ninja....</dd>
+        </dl>
+        <h1>Nested Unordered List</h1>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+              <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+              </ul>
+            </li>
+            <li>Milk</li>
+          </ul>
+    </body>
+</html>

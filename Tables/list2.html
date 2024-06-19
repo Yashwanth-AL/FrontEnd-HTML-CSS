@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page</title>
+    <!--
+        The type attribute of the <ol> tag, defines the type of the list item marker:
+
+        Type	    Description
+        type="1"	The list items will be numbered with numbers (default)
+        type="A"	The list items will be numbered with uppercase letters
+        type="a"	The list items will be numbered with lowercase letters
+        type="I"	The list items will be numbered with uppercase roman numbers
+        type="i"	The list items will be numbered with lowercase roman numbers   
+        start="50"  starts the list count from 50
+    -->
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #9d2323;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #7811c6;
+        }
+    </style>
+    </head>
+<body>
+
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    </ul>
+
+</body>
+</html>
