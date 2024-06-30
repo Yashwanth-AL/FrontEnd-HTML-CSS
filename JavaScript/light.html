@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>light switch</title>
+    </head>
+    <body>
+        <h1>javascript to demonstrate light on and off mechanisms.</h1>
+        <script>
+            function light(sw){
+                var pic;
+                if(sw == 1){
+                    pic = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuOCXhcE4csSanlBhD1Oo57h8JZZTHS4bWmw&s"
+                }
+                else{
+                    pic = "https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg"
+                }
+                document.getElementById('switch').src = pic;
+            }
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+        <img id="switch" src="https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg" alt="bulb" style="width: 300px; height: 300px;">
+        <br>
+        <button type="button" onclick=light(1) style="height: 30px; width: 150px;color: red; background-color: yellow; font-size: large;" >Light on!</button>
+        <button type="button" onclick=light(0) style="height: 30px; width: 150px;color: red; background-color: yellow;  font-size: large;">Light off!</button>
+    </body>
+</html>
