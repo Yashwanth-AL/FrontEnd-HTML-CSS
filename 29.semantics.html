@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            <article>	Defines independent, self-contained content
+            <aside> 	Defines content aside from the page content
+            <details>	Defines additional details that the user can view or hide
+            <figcaption>	Defines a caption for a <figure> element
+            <figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+            <footer>	Defines a footer for a document or section
+            <header>	Specifies a header for a document or section
+            <main>	    Specifies the main content of a document
+            <mark>	    Defines marked/highlighted text
+            <nav>	    Defines navigation links
+            <section>	Defines a section in a document
+            <summary>	Defines a visible heading for a <details> element
+            <time>	    Defines a date/time
+        -->
+        
+        <title>Semantics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/favicon.ico">
+        <style>
+            aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: lightgray;
+            }
+            .all {
+              margin: 0;
+              padding: 5px;
+              background-color: lightgray;
+            }
+            
+            .all > h1, .particular {
+              margin: 10px;
+              padding: 5px;
+            }
+            h1 {
+                color: red;
+            }
+            
+            .particular {
+              background: white;
+            }
+            
+            .particular > h2, p {
+              margin: 4px;
+              font-size: 90%;
+            }
+            </style>
+    </head>
+<body>
+
+
+<article class="all">
+    <h1>The Section element</h1>
+    <section class="particular">
+        <h2>WWF</h2>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+      </section>
+      
+      <section class="particular">
+        <h2>WWF's Panda symbol</h2>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+      </section>
+</article>
+
+<article class="all">
+    <h1>Article element</h1>
+    <article class="particular">
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    <article class="particular">
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+    <article class="particular">
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </article>
+
+  <aside>
+    <p>This is aside element and coded using some css properties</p>
+  </aside>
+
+  <figure style="align-items: center; display: flex; flex-direction: column;">
+    <img src="Photos/me.jpg" alt="yashwanth" style="width: 200px; height: 200px;">
+    <figcaption>Fig.1 - Yashwanth-AL</figcaption>
+  </figure>
+
+<footer>
+<p>Author: Yashwanth-AL</p>
+<p><a href="mailto:yashwanthal2004@gmail.com">yashwanthal2004@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
+
