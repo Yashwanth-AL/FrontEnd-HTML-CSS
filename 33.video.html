@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video-files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/favicon.ico">
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Video with controls inside.</h1>
+    <video width="500" height="300" controls autoplay muted>
+        <source src="/HTML/Photos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+     <br><br>
+     <div style="text-align:center"> 
+        <h1>with with control buttons.</h1>
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="mute()">Mute</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="/HTML/Photos/video.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+
+      function mute(){
+        myVideo.muted = !myVideo.muted;
+      }
+      
+      function makeBig() { 
+          myVideo.width = 560; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 320; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 420; 
+      } 
+      </script> 
+</body>
+</html>
