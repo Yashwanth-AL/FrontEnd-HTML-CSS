@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+        <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/favicon.ico">
+    </head>
+    <body>
+        <canvas id="myCanvas" height="100" width="200" style="border: 1px solid black;">
+            your browser does not support canvas.
+        </canvas>
+        <canvas id="myCanvas2" height="100" width="200" style="border: 1px solid black;">
+            your browser does not support canvas.
+        </canvas>
+        <canvas id="myCanvas3" height="100" width="200" style="border: 1px solid black;">
+            your browser does not support canvas.
+        </canvas>
+        <canvas id="myCanvas4" height="100" width="200" style="border: 1px solid black;">
+            your browser does not support canvas.
+        </canvas>
+        <canvas id="myCanvas5" height="100" width="200" style="border: 1px solid black;">
+            your browser does not support canvas.
+        </canvas>
+        <canvas id="myCanvas6" height="100" width="200" style="border: 1px solid black;">
+            your browser does not support canvas.
+        </canvas>
+
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+        </script>
+
+        <script>
+            var c = document.getElementById("myCanvas2");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+
+        <script>
+            var c = document.getElementById("myCanvas3");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello World", 10, 50);
+        </script>
+
+        <script>
+            var c = document.getElementById("myCanvas4");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Hello World", 10, 50);
+        </script>
+
+        <script>
+            var c = document.getElementById("myCanvas5");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
+
+        <img id="scream" src="/HTML/Photos/me.jpg" alt="The Scream" width="180" height="90">
+        <script>
+            var img = document.getElementById("scream");
+            img.onload = function() {
+                var c = document.getElementById("myCanvas6");
+                var ctx = c.getContext("2d");
+                ctx.drawImage(img, 0, 0, c.width, c.height);
+            };
+        </script>
+
+    </body>
+</html>
