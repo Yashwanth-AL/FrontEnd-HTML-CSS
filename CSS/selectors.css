@@ -1,0 +1,38 @@
+/* Selects the element with id="firstname" */
+  #firstname {
+    color: red;
+}
+
+/* Selects all elements with class="intro" */
+.intro {
+    font-weight: bold;
+}
+
+/* Selects only <p> elements with class="intro" */
+p.intro {
+    color: blue;
+}
+
+/* Selects all elements */
+* {
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+/* Selects all <p> elements */
+p {
+    margin: 30px;
+}
+
+/* Selects all <div> elements and all <p> elements */
+div, p {
+    padding: 10px;
+}
+
+body {
+    background-image: url(/HTML/Photos/me.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-attachment: scroll;
+}
